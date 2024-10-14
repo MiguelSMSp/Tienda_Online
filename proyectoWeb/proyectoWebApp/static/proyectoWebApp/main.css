@@ -1,0 +1,170 @@
+body {
+    background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("/static/img/fondo.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ededef;
+    background-color: #ffffff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* NAVBAR */
+.navbar .nav-link {
+    color: white; /* Cambia el color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.navbar .nav-link:hover {
+    color: #ccc; /* Cambia el color al pasar el cursor sobre el enlace */
+    text-decoration: underline; /* Opcional: Añade el subrayado al pasar el cursor */
+}
+
+.navbar .nav-link.active {
+    color: white;
+    text-decoration: underline; /* Mantiene el subrayado en la página actual */
+}
+
+.navbar-toggler{
+    color:white;
+}
+
+.navbar-toggler-icon {
+    /* Rotar la flecha hacia abajo */
+    transform: rotate(180deg);
+    text-align:center;
+}
+
+
+/* FOOTER*/
+.footer-bg-primary {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6d94bf), color-stop(50%, #446e9b), to(#3e648d));
+    background-image: linear-gradient(#6d94bf, #446e9b 50%, #3e648d);
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+    filter: none;
+    border: 1px solid #345578;
+
+}
+
+.footer-bg-primary .mbt .link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bg-primary .direction{
+    text-align: left;
+}
+
+
+/* aplica gris cuando ponemos el raton encima en politica, aviso y cookies*/
+.footer-bg-primary .mbt .link:hover {
+    color: #ccc;
+}
+
+
+/* HOME */
+/* estilo para el texto dentro del div con la clase 'intro-text' */
+.intro-text {
+    color: white;
+}
+
+/* estilo específico para los elementos h2 dentro de '.intro-text' */
+.intro-text .section-heading {
+    color: white;
+}
+
+/* estilo específico para los párrafos dentro de '.intro-text' */
+.intro-text p {
+    color: white;
+}
+
+.cta-inner .section-heading{
+    color:white;
+}
+
+/* CONTACTO */
+.contact h2 {
+    color:white;
+    text-align:center;
+}
+
+.contact p {
+    text-align:center;
+}
+
+
+/*CARRO*/
+.table{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6d94bf), color-stop(50%, #446e9b), to(#3e648d));
+    background-image: linear-gradient(#3e648d, #ffffff 50%, #ffffff );
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+    filter: none;
+    border: 1px solid #345578;
+    border-radius: 15px;
+    overflow: hidden;
+s
+}
+/*color blanco en la letras del registro de usuario */
+.form-text {
+    margin-top: .25rem;
+    font-size: .875em;
+    color: #ffffff;
+}
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: .875em;
+    color: #fa9f00;
+}
+
+.btn-success {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#61dd45), color-stop(50%, #3cb521), to(#36a41e));
+    background-image: linear-gradient(#61dd45, #3cb521 50%, #36a41e);
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+    filter: none;
+    border: 1px solid #2e8a19;
+    display: inline-block;
+    width: 100%;
+}
+/*modificacion de la grafica*/
+.grafico-container{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px;
+}
+
+/*modificacion de botones registro e iniciar sesion*/
+.auth-links a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.auth-links a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+/* botones ver detalles */
+.btn-info {
+    color: #fff;
+    background-image: linear-gradient(to bottom, #6d94bf, #446e9b 50%, #3e648d); /* Degradado de izquierda a derecha */
+    border-color: #000000;
+}
+
+.btn-info:hover {
+    background-image: linear-gradient(to bottom, #6d94bf, #446e9b 50%, #3e648d);
+    color: #fff;
+    border-color: #000000;
+}

@@ -1,0 +1,22 @@
+{% extends "proyectoWebApp/base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            {% if producto.imagen %}
+                <img src="{{ producto.imagen.url }}" style="width:100%; height:auto; object-fit:contain; margin-bottom: 20px; margin: 10px 5px;">
+            {% endif %}
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="background-color: white; padding: 20px; margin-bottom: 20px; margin: 10px 5px;">
+                <h2 style="color:black;"> {{ producto.nombre }} {{ producto.modelo }}</h2>
+                <p style="color:black;"><strong>Descripción:</strong></p>
+                <pre style="font-family: inherit; font-size: inherit;">{{ producto.descripcion }}</pre>
+                <p style="color:black;"><strong>Precio en Tienda:</strong> {{ producto.precio_tienda }} €</p>
+                <a href="{% url 'carro:agregar' producto.id %}" class="btn btn-success">Agregar al Carro</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

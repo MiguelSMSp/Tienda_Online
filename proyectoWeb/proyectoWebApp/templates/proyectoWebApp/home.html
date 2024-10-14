@@ -1,0 +1,38 @@
+{% extends "proyectoWebApp/base.html" %}
+
+{% load static %}
+{% block content %}
+ <!-- Heading -->
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4" >
+                        <span class="section-heading">Te conectamos con el resto del mundo con los mejores productos del mercado.</span>
+                    </h2>
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" style="text-align:center;" src="{% static 'img/phinicio.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Message -->
+    <section class="page-section cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="cta-inner text-center rounded">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading">Visite nuestra tienda o web para una experiencia única. El compromiso con nuestros clientes está garantizado </span>
+                        </h2>
+                        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" style="text-align:center;" src="{% static 'img/phinicio2.png' %}" alt="">
+                        <p><p></p></p>
+                        <p class="mb-0">Con 15 años de experiencia Gatechsp ofrece los mejores productos informáticos, cuidando hasta el último detalle para brindar calidad y comfort a nuestros clientes. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

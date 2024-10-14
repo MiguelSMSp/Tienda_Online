@@ -1,0 +1,37 @@
+{% extends "proyectoWebApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div style="float:right;">
+        {% include "carroApp/widget.html" %}
+    </div>
+    <div class="row">
+        {% for producto in productos %}
+            <div class="col-md-3">
+                <div class="card" style="margin: 10px 5px;">
+                    {% if producto.imagen %}
+                        <img src="{{ producto.imagen.url }}" style="width:100%; max-height:100px; object-fit:contain;">
+                    {% endif %}
+                    <div class="card-body text-center" style="color:black;">
+                        <h7 class="card-title" style="font-size: 0.90rem;">{{ producto.nombre }} {{ producto.modelo }}</h7>
+                        <p class="card-text" style="font-size: 0.90rem;">{{ producto.precio_tienda }} €</p>
+                        <a href="{% url 'producto_detalle' producto.id %}" class="btn btn-info">Ver Detalles</a>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="{% url 'carro:agregar' producto.id %}" class="btn btn-success">Agregar al Carro</a>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <h1 style="text-align:center; color:white;">Producto no encontrado</h1>
+        {% endfor %}
+    </div>
+    <div class="text-center" style="margin-bottom: 10px;">
+        <h2 style="color:white; ">Gráfica de los Productos Más Vendidos</h2>
+        <img src="{{ grafico }}" alt="Gráfica de Productos Más Vendidos" style="max-width:100%; height:auto; border-radius: 8px;">
+    </div>
+</div>
+</div>
+{% endblock %}

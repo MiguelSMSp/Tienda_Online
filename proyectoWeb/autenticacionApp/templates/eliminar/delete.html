@@ -1,0 +1,14 @@
+{% extends "proyectoWebApp/base.html" %}
+{% load static %}
+{% block content %}
+
+     <div style="width: 75%; margin:auto;">
+        <h2 style="color:white;">¿Estás seguro de que deseas eliminar tu cuenta? Esta acción es irreversible.</h2>
+
+        <form method="post" action="{% url 'eliminar_cuenta' %}" style="text-align:center;">
+            {% csrf_token %}
+            <button type="submit" class='btn btn-danger' >Eliminar mi cuenta</button>
+        </form>
+    </div>
+
+{% endblock %}

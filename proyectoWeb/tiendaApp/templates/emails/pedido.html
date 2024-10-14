@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido</title>
+</head>
+<body>
+
+    Hola {{ nombre_usuario }} <br/>
+    Nº de pedido: {{ pedido.id }} <br/>
+    Email del usuario: {{ email_usuario }} <br/>
+    <ul>
+        {% for linea in lineas_pedido %}
+            <li>{{ linea.cantidad }} unidades de {{ linea.producto.nombre }}</li>
+        {% endfor %}
+    </ul>
+
+
+</body>
+</html>
